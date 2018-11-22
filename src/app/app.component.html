@@ -8,29 +8,24 @@
   <!-- Links -->
   <span class="cr-header-center">
   <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">About me</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Portfolio</a>
-    </li>
+      <li><a class="cr-nav-link" [routerLink]="['welcome']">Home</a></li>
+      <li><a class="cr-nav-link" [routerLink]="['about']">About Me </a></li>
+    <li><a class="cr-nav-link" [routerLink]="['portfolio']">Portfolio</a></li>
   </ul>
 </span>
 </nav>
 
-<div class="cr-main">
+<!-- <div class="cr-main">
   <h1>
    {{ title }}!
   </h1>
 
 <p>On this website you will find information about me and some of the projects I have been working on.</p>
+</div> -->
+
+<div class="cr-main">
+<router-outlet></router-outlet>
 </div>
-
-
-  
   
 <!-- footer -->
 <div class="cr-footer">
