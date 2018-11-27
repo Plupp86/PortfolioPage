@@ -3,17 +3,27 @@
 
 <div class="cr-all">
 
-  <nav class="navbar navbar-expand-sm cr-navbar">
+  <!-- <nav class="navbar navbar-expand-sm cr-navbar"> -->
 
   <!-- Links -->
-  <span class="cr-header-center">
-  <ul class="navbar-nav">
-      <li><a class="cr-nav-link" [routerLink]="['welcome']">Home</a></li>
-      <li><a class="cr-nav-link" [routerLink]="['about']">About Me </a></li>
-    <li><a class="cr-nav-link" [routerLink]="['portfolio']">Portfolio</a></li>
-  </ul>
-</span>
-</nav>
+
+  <div class="cr-navbar">
+  <div class="cr-header-center">
+      <span class="cr-header-link">
+        <a class="cr-nav-link" [routerLink]="['welcome']" (click)="drawCanvas('welcome')">Home</a>
+      </span>
+      <span class="cr-header-link">
+          <a class="cr-nav-link" [routerLink]="['about']" (click)="drawCanvas('about')">About Me </a>
+      </span>
+      <span class="cr-header-link">
+        <a class="cr-nav-link" [routerLink]="['portfolio']" (click)="drawCanvas('portfolio')">Portfolio</a>
+      </span>
+  <svg class="cr-linkBar">
+          <rect id="underscore" x="0" y="0" width="33%" height="2" />
+  </svg>
+  </div>
+</div>
+<!-- </nav> -->
 
 <!-- <div class="cr-main">
   <h1>

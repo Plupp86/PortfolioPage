@@ -1,6 +1,32 @@
-<div class="panel panel-primary">
-        <h1>
-       Portfolio
-        </h1>
+
+    <h1>
+        Portfolio
+    </h1>
+
+    On the left you can find information about projects I have worked on. 
+    They are all presentated with a brief description and tagged with some of the tools used during these projects.
+    Links to the actual webpage as well as links to corresponding gitHub repository is also attached.
+
+
+
+            
+                <div class="cr-portfolio-list">
+                        <div class="cr-portfolio-item" *ngFor='let item of portfolio'>
+                        <h3>{{item.name}}</h3>
+                        <img src="{{item.thumb}}" width="280px">
+                        <div><p>{{item.description}}</p></div>
+                        <div><a href="{{item.url}}">Visit Webpage</a></div>
+                        <div><a href="{{item.git}}">Look at source code</a></div>
+                        <div class="cr-skill-tag" *ngFor='let skill of item.tags'>
+                            {{skill}}
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+
+
+
         
+       
     </div>

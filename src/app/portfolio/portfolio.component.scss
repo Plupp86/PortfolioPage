@@ -1,0 +1,50 @@
+.cr-skill-tag {
+    display: block;
+    float: left;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 2px;
+    
+}
+
+.cr-portfolio-item {
+    background-color: gray;
+    border: 2px solid black;
+    width: 300px;
+    padding: 10px;
+    float: left;
+    margin: 10px;
+    
+}
+
+.cr-portfolio-list {
+    
+    display: flex;  //Change to grid for small screens
+    justify-content: center;
+}
+
+.clear {
+    display: none;
+    float: none;
+}
+
+.cr-welcome {
+    width: 47%;
+    
+    display: block;
+    border: 2px solid gray;
+    padding-bottom: 0px;
+}
+
+.cr-left {
+    margin-left: 2%;
+    float: left;
+}
+
+.cr-right {
+    margin-right: 2%;
+    float: right;
+}

@@ -7,7 +7,31 @@ import { WelcomeComponent } from './home/welcome.component';
 import { HttpModule } from '@angular/http';
 import { PortfolioModule } from './portfolio/portfolio.module';
 import { AboutComponent } from './home/about.component';
+import { RouterModule } from '@angular/router';
+import { Routes } from "@angular/router";
+import { CommonModule } from '@angular/common';
+
+
+
 /* import 'rxjs/Rx'; */
+
+
+/* var routes: Routes = [
+  {
+      path: "parent/:id",
+      component: ParentComponent,
+      children: [
+          {
+              path: "child/:id",
+              component: ChildComponent
+          }
+      ]
+  },
+  {
+      path: "**",
+      redirectTo: "/"
+  }
+]; */
 
 
 @NgModule({
@@ -18,6 +42,7 @@ import { AboutComponent } from './home/about.component';
   ],
   imports: [
     routing,
+    CommonModule,
     BrowserModule,
     HttpModule,
     PortfolioModule
