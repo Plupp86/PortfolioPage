@@ -1,44 +1,49 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <!-- A grey horizontal navbar that becomes vertical on small screens -->
 
-<div class="cr-all">
 
-  <!-- <nav class="navbar navbar-expand-sm cr-navbar"> -->
-
+<!-- <nav class="navbar navbar-expand-sm cr-navbar"> -->
+  
   <!-- Links -->
-
+  
+  <div class="cr-all">
   <div class="cr-navbar">
   <div class="cr-header-center">
       <span class="cr-header-link">
-        <a class="cr-nav-link" [routerLink]="['welcome']" (click)="drawCanvas('welcome')">Home</a>
+        <a class="cr-nav-link" routerLink="/welcome" (click)="drawCanvas('welcome')">Home</a>
       </span>
       <span class="cr-header-link">
-          <a class="cr-nav-link" [routerLink]="['about']" (click)="drawCanvas('about')">About Me </a>
+          <a class="cr-nav-link" routerLink="/about" (click)="drawCanvas('about')">About Me </a>
       </span>
       <span class="cr-header-link">
-        <a class="cr-nav-link" [routerLink]="['portfolio']" (click)="drawCanvas('portfolio')">Portfolio</a>
+        <a class="cr-nav-link" routerLink="/portfolio" (click)="drawCanvas('portfolio')">Portfolio</a>
       </span>
   <svg class="cr-linkBar">
           <rect id="underscore" x="0" y="0" width="33%" height="2" />
   </svg>
   </div>
 </div>
-<!-- </nav> -->
+
+<!-- <nav>
+    <a routerLink="/welcome" routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+  </nav> -->
+
+  <div class="cr-main">
+  <main [@routerTransition]="getState(o)">
+    <router-outlet #o="outlet"></router-outlet>
+  </main>
+</div>
+
 
 <!-- <div class="cr-main">
-  <h1>
-   {{ title }}!
-  </h1>
-
-<p>On this website you will find information about me and some of the projects I have been working on.</p>
-</div> -->
-
-<div class="cr-main">
+  
 <router-outlet></router-outlet>
-</div>
+</div> -->
   
 <!-- footer -->
-<div class="cr-footer">
+
+<!-- <div class="cr-footer">
   <span class="cr-footer-left">
     http://www.chrisryas.com<br>
     christofer.ryas@gmail.com
@@ -47,6 +52,7 @@
     &copy; Christofer Ryås<br>
     2018-11-21
   </span>
-</div>
+</div> -->
 
-</div>
+
+</div> 

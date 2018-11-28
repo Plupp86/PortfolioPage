@@ -1,8 +1,86 @@
+<div class="cr-welcome cr-top">
+    <div class="cr-welcome-text">
+        <h1>
+        Christofer Ryås
+        </h1>
+        <p>Scroll down to see why you should hire me</p>
+    </div>
+</div>
 
-<h1>
-    Christofer Ryås
-</h1>
-<div class="cr-welcome-main">
+<div class="cr-second cr-welcome-lower">
+    <div class="cr-welcome-content">
+        <div class="cr-second-text">
+            <h2>My story as a developer</h2>
+       <p>After five years working offshore in the oil and gas industry
+            I took a programming course in C#.NET during the spring of 2018 in
+            order to complement my masters degree in Engeneering Physics. This
+            gives me a good combination of problem solving and physiscs knowledge
+            combined with understanding of programming and software development.
+            My experience working with co-workers from all over the world and with
+            a wide range of educational background, together with my theoretical
+            education, makes me a valuable asset in many different areas. I am also
+            a quick learner and good at adopting to new situations.
+       </p>
+    </div>
+    </div>
+</div>
+
+<div class="cr-third cr-welcome-lower">
+    <div class="cr-welcome-cv">
+            <div class="cr-welcome-cv-text">
+        <h2>Education</h2>
+        <div class="cr-cv-item" *ngFor='let item of myCv.education'>
+
+            <span class="cr-cv-header">
+                <h4>{{item.startDate}} - {{item.endDate}}, {{item.course}}, {{item.issuer}}</h4>
+            </span>
+            <span>
+                <p>{{item.description}}</p>
+            </span>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="cr-third cr-welcome-lower">
+        <div class="cr-welcome-cv">
+                <div class="cr-welcome-cv-text">
+                <h2>Experience</h2>
+                <div class="cr-cv-item" *ngFor='let item of myCv.experience'>
+        
+                    <span class="cr-cv-header">
+                        <h4>{{item.startDate}} - {{item.endDate}}, {{item.title}}, {{item.company}}</h4>
+                    </span>
+                    <span>
+                        <p>{{item.description}}</p>
+                    </span>
+                </div>
+                </div>
+            </div>
+</div>
+
+<div class="cr-fourth cr-welcome-lower">
+        <div class="cr-welcome-content">
+            <div class="cr-second-text">
+                <h2>My story before</h2>
+           <p>After five years working offshore in the oil and gas industry
+                I took a programming course in C#.NET during the spring of 2018 in
+                order to complement my masters degree in Engeneering Physics. This
+                gives me a good combination of problem solving and physiscs knowledge
+                combined with understanding of programming and software development.
+                My experience working with co-workers from all over the world and with
+                a wide range of educational background, together with my theoretical
+                education, makes me a valuable asset in many different areas. I am also
+                a quick learner and good at adopting to new situations.
+           </p>
+        </div>
+        </div>
+    </div>
+
+
+
+
+<!-- <div class="cr-welcome-main">
         <div class="cr-welcome cr-left">
             <h2>left</h2>
         </div>
@@ -11,4 +89,4 @@
             <img src="/assets/img/cv-ryas-1.png" width=200px style="margin:0px;">
         </div>
         
-</div>
+</div> -->

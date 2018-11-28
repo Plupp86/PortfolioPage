@@ -1,23 +1,31 @@
-$bgheader: rgba(202, 202, 202, 0.7);
+/* $bgheader: rgba(202, 202, 202, 0.9); */
+$bgheader: rgba(0, 0, 0, 0.7);
 $bgmain: rgba(202, 202, 202, 0.3);
 
 .cr-navbar {
     background-color: $bgheader;
     color: black;
-    border-bottom: 2px solid gray;
+    /* border-bottom: 2px solid gray; */
     padding-top:5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 5;
         a:link, a:visited, a:active {
-        color: black;
+        color: silver;
         }
     }
 
 #underscore {
+    fill: silver;
     transition: transform .5s ease-in-out;
 }
 .cr-linkBar {
     width:100%;
     height: 2px;
-    background-color:gray;
+    background-color:black;
     margin-top:-10px;
 }
 
@@ -32,7 +40,6 @@ $bgmain: rgba(202, 202, 202, 0.3);
     text-align: center;
     display: block;
     float: left;
-
 }
 
 .cr-footer {
@@ -69,29 +76,29 @@ $bgmain: rgba(202, 202, 202, 0.3);
 }
 
 .cr-main {
-    background-color: $bgmain;
-    border: 2px solid black;
-    border-radius: 5px;
+    background-image: url('/assets/img/bg_main.jpg');
+    background-size: 100%;
+    /* background-color: $bgmain; */
+    /* border: 2px solid black; */
+    /* border-radius: 5px; */
     margin: auto;
-    margin-top: 25px;
-    margin-bottom: 80px;
-    width: 98%;
-    /* height: 98vh; */
-    
-    
+    margin-top: 0px;
+    width: 100%;
+ /*    height: 100vh; */
+    padding-top: 60px;
 }
 
-.cr-all {
+/* .cr-all {
     width: 100%;
     height: 100%;
-}
+} */
 
 .cr-nav-link {
     padding: 5px;
 }
 
-.active {
+/* .active {
     a:link, a:visited, a:active {
         color: red;
         }
-}
+} */

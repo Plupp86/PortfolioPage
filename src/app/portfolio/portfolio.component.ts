@@ -14,28 +14,28 @@ export class PortfolioComponent {
 
     portfolio: any[] = [
         {
-            name: 'www.chrisryas.com',
+            name: 'My Portfolio',
             url: 'http://www.chrisryas.com',
             git: 'github.com',
-            thumb: '/assets/img/logo_small.png',
+            thumb: '/assets/img/thumbs/cr_thumb.jpg',
             description: 'The webpage you are currently on. Used to promoto my awesome skills as a developer.',
-            tags: ['Angular','JavaScript','TypeScript','Front-End']
+            tags: ['Angular','JavaScript','TypeScript','Front-End','AWS']
         },
         {
-        name: 'ranking',
+        name: 'Umeå BTK Ranking',
         url: 'http://ranking.umeabtk.se',
         git: 'github.com',
-        thumb: 'https://www2.idrottonline.se/globalassets/umea-btk---bordtennis/bilder/annat/umea-btk-header.jpg',
+        thumb: '/assets/img/thumbs/umeabtk_thumb.jpg',
         description: 'A webpage used to submit matches and calculate a ranking for me table tennis club',
-        tags: ['SQL','MVC']
+        tags: ['SQL','MVC','Unit Testing','Azure']
         },
         {
-            name: 'spelportalen',
+            name: 'Spelportalen',
             url: 'http://spelportalen.azurewebsites.net',
             git: 'github.com',
-            thumb: 'http://spelportalen.azurewebsites.net/Images/prototype_log4_white_smaller.png',
+            thumb: '/assets/img/thumbs/spel_thumb.jpg',
             description: 'A gaming platform where one can play simple javascript games in real time.',
-            tags: ['MVC','JavaScript','SignalR']    
+            tags: ['MVC','JavaScript','SignalR','Azure']    
         }
     ];
 

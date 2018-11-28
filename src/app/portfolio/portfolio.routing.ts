@@ -5,7 +5,7 @@ import { PortfolioComponent } from './portfolio.component';
 
 
 export const portfolioRoutes: Routes = [
-    { path: 'portfolio', component: PortfolioComponent },
+    { path: 'portfolio', component: PortfolioComponent, data: {state: 'portfolio'}  },
     /* { path: 'movie/:id', component: MovieDetailComponent } */
 ];
 

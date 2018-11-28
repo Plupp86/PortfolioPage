@@ -1,3 +1,4 @@
+import { NgtUniversalModule } from '@ng-toolkit/universal';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AlertModule } from 'ngx-bootstrap';
@@ -10,6 +11,8 @@ import { AboutComponent } from './home/about.component';
 import { RouterModule } from '@angular/router';
 import { Routes } from "@angular/router";
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CvService } from './home/cv.service';
 
 
 
@@ -40,17 +43,17 @@ import { CommonModule } from '@angular/common';
     WelcomeComponent,
     AboutComponent
   ],
-  imports: [
-    routing,
+  imports:[
+ CommonModule,
+NgtUniversalModule,
+ 
     CommonModule,
-    BrowserModule,
-    HttpModule,
-    PortfolioModule
-  ],
-  providers: [],
-  bootstrap: [
-    AppComponent
     
-  ]
+    HttpModule,
+    PortfolioModule,
+    BrowserAnimationsModule,
+    routing,
+  ],
+  providers: [CvService],
 })
 export class AppModule { }

@@ -1,26 +1,43 @@
-import { Component, OnChanges } from '@angular/core';
+import { isPlatformBrowser , DOCUMENT} from '@angular/common';
+import { environment } from '../environments/environment';
+import { Component, OnChanges , OnInit, Inject, PLATFORM_ID} from '@angular/core';
 import { Router } from '@angular/router';
 
 
 import { Event as NavigationEvent } from "@angular/router";
 import { NavigationEnd } from "@angular/router";
-
+import { routerTransition } from './router.animation';
+import { platformBrowser } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
+  animations: [routerTransition],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'Christofer Ryås - Hire me now!';
-  
+export class AppComponent implements OnInit {
+
+    public ngOnInit(): void {
+        if (!isPlatformBrowser(platformBrowser)) {
+            let bases = document.getElementsByTagName('base');
+    
+            if (bases.length > 0) {
+                bases[0].setAttribute('href', environment.baseHref);
+            }
+        }
+    }
+
+    getState(outlet) {
+    return outlet.activatedRouteData.state;
+  }
+
   public activated: {
     home: boolean;
     about: boolean;
     portfolio: boolean;
   }
 
-    private router: Router;
+    private router: Router; 
 
   constructor (router: Router) {
     console.log(router);
@@ -43,7 +60,7 @@ export class AppComponent {
     )
 }
 
-  drawCanvas (linkClicked: string): void {
+   drawCanvas (linkClicked: string): void {
 
       
     let underscore = document.getElementById('underscore');
@@ -61,7 +78,4 @@ export class AppComponent {
         underscore.style.transform = "translate(33%, 0%)";
     }     
   }
-
-
-    
 }

@@ -1,9 +1,9 @@
-.cr-welcome {
+/* .cr-welcome {
     width: 47%;
     height: 90%;
     border: 2px solid gray;
     padding-bottom: 0px;
-}
+} */
 
 .cr-left {
     margin-left: 2%;
@@ -16,6 +16,106 @@
 }
 
 .cr-welcome-main{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.cr-welcome {
+    height: calc(100vh - 60px);
+}
+
+.cr-second {
+    background-image: url('/assets/img/comp.jpg');
+    background-size: 100%;
+    margin:0;
+    width: 50%;
+    padding-top: 50%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+    display: block;
+}
+
+.cr-fourth {
+    background-image: url('/assets/img/wb-800.jpg');
+    background-size: 100%;
+    margin:0;
+    width: 50%;
+    padding-top: 50%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+    display: block;
+}
+
+.cr-welcome-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cr-welcome-cv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.cr-welcome-cv-text {
+    width: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cr-second-text {
+    width: 480px;
+    color: silver;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cr-third {
+    background-color: silver;
+    color: black;
+    width: 50%;
+    padding-top: 50%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+    display: block;
+}
+
+.cr-welcome-lower {
+    margin:0;
+    width: 50%;
+    float: left;
+}
+
+.cr-top {
+    /* text-align: center;
+    vertical-align: middle;
+    align-items: center; */
+    background-color: rgba(202, 202, 202, 0.3);
+}
+
+.cr-welcome-text {
+    position: relative;
+    top: 40%;
+    width:100%;
+    text-align: center;
+}
+
+.cr-cv-header {
+    color: brown;
+    h4 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+.cr-cv-item {
+    margin-bottom: 10px;
 }

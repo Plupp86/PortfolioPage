@@ -1,0 +1,17 @@
+{
+  "universal": {
+    "project": "portfolio",
+    "skipInstall": false,
+    "directory": "."
+  },
+  "serverless": {
+    "provider": "aws",
+    "project": "portfolio",
+    "skipInstall": false,
+    "directory": ".",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}

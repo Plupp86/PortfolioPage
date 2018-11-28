@@ -5,10 +5,12 @@ import { AboutComponent } from './home/about.component';
 
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-    { path: 'welcome', component: WelcomeComponent },
-    { path: 'about', component: AboutComponent }
+    { path: '', component: WelcomeComponent, data: {state: 'start'} },
+    { path: 'welcome', component: WelcomeComponent, data: {state: 'home'} },
+    { path: 'about', component: AboutComponent, data: {state: 'about'} }
 ];
 
 export const routing: ModuleWithProviders =
-    RouterModule.forRoot(appRoutes);
+    RouterModule.forRoot(appRoutes, {
+        useHash: true
+    });
