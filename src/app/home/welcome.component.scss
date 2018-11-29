@@ -1,5 +1,9 @@
 
-.cr-left {
+    a:link, a:visited, a:active {
+        color: brown;
+        }
+
+/* .cr-left {
     margin-left: 2%;
     float: left;
 }
@@ -7,7 +11,7 @@
 .cr-right {
     margin-right: 2%;
     float: right;
-}
+} */
 
 .cr-welcome {
     height: calc(100vh - 60px);
@@ -17,20 +21,21 @@
     background-image: url('/assets/img/comp.jpg');
     background-size: 100%;
     margin:0;
-    width: 50%;
-    padding-top: 50%; /* 1:1 Aspect Ratio */
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
     position: relative; /* If you want text inside of it */
-    display: block;
+   /*  display: block; */
+   
 }
 
 .cr-fourth {
     background-image: url('/assets/img/wb-800.jpg');
     background-size: 100%;
     margin:0;
-    width: 50%;
-    padding-top: 50%; /* 1:1 Aspect Ratio */
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
     position: relative; /* If you want text inside of it */
-    display: block;
+    /* display: block; */
 }
 
 .cr-welcome-content {
@@ -71,16 +76,17 @@
 .cr-third {
     background-color: silver;
     color: black;
-    width: 50%;
-    padding-top: 50%; /* 1:1 Aspect Ratio */
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
     position: relative; /* If you want text inside of it */
-    display: block;
+    /* display: block; */
 }
 
 .cr-welcome-lower {
     margin:0;
-    width: 50%;
-    float: left;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .cr-top {
@@ -107,4 +113,84 @@
 
 .cr-cv-item {
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .cr-welcome-lower {
+        grid-template-columns: none;
+    }
+        .cr-grid-item:nth-child(1) { order: 1; }
+        .cr-grid-item:nth-child(2) { order: 2; }
+        .cr-grid-item:nth-child(3) { order: 4; }
+        .cr-grid-item:nth-child(4) { order: 3; }  
+}
+
+@media only screen and (max-width: 520px) {
+
+/*     <div class="cr-welcome-lower">
+<div class="cr-second cr-grid-item">
+    <div class="cr-welcome-content">
+        <div class="cr-second-text"> */
+        .cr-second {
+            background-image: url('/assets/img/comp.jpg');
+            background-size: 100%;
+            margin:0;
+            width: 100%;
+            padding-top: 0%; /* 1:1 Aspect Ratio */
+            position: static; /* If you want text inside of it */
+        }
+        
+        .cr-fourth {
+            background-image: url('/assets/img/wb-800.jpg');
+            background-size: 100%;
+            margin:0;
+            width: 100%;
+            padding-top: 0%; /* 1:1 Aspect Ratio */
+            position: static; /* If you want text inside of it */
+            /* display: block; */
+        }
+        
+        .cr-welcome-content {
+            position: static;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            height: 100%;
+        }
+        
+        .cr-welcome-cv {
+            position: static;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+        }
+        
+        .cr-welcome-cv-text {
+            width: 100%;
+            position: relative;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        .cr-second-text {
+            width: 100%;
+            color: silver;
+            text-align: left;
+            position: relative;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        
+        .cr-third {
+            background-color: silver;
+            color: black;
+            width: 100%;
+            padding-top: 0%; /* 1:1 Aspect Ratio */
+            position: static; /* If you want text inside of it */
+            /* display: block; */
+        }
 }

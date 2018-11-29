@@ -1,11 +1,10 @@
-.cr-portfolio {
+/* .cr-portfolio {
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
     text-align: center;
-    /* background-color: rgba(202, 202, 202, 0.3); */
     width: 800px;
-}
+} */
 
 .cr-skill-tag {
     display: block;
@@ -15,8 +14,8 @@
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    margin: 2px;
-    
+    margin-right: 4px;
+    margin-top: 4px;
 }
 
 .cr-portfolio-item {
@@ -24,9 +23,11 @@
     border: 2px solid black;
     width: 460px;
     padding: 10px;
-    float: left;
     margin: 10px;
  
+    a:link, a:visited, a:active {
+        color: black;
+        }
 }
 
 .cr-portfolio-list {
@@ -48,4 +49,26 @@
     height: calc(100vh - 60px);
     margin:0;
     padding-top: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+    .cr-portfolio-list {
+        grid-template-columns: none;
+    }
+
+    .cr-portfolio-main {
+        height: unset;
+    }
+}
+
+@media only screen and (max-width: 560px) { 
+        .cr-portfolio-item {
+            width: 96%;
+            margin: 2%;
+            padding: 3%;
+        }
+
+        .cr-thumb {
+            width: 94%;
+        }
 }

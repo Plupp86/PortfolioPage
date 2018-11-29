@@ -18,7 +18,7 @@ export class PortfolioComponent {
             url: 'http://www.chrisryas.com',
             git: 'github.com',
             thumb: '/assets/img/thumbs/cr_thumb.jpg',
-            description: 'The webpage you are currently on. Used to promoto my awesome skills as a developer.',
+            description: 'The webpage you are currently on. Used to promote my skills as a developer.',
             tags: ['Angular','JavaScript','TypeScript','Front-End','AWS']
         },
         {
@@ -26,7 +26,7 @@ export class PortfolioComponent {
         url: 'http://ranking.umeabtk.se',
         git: 'github.com',
         thumb: '/assets/img/thumbs/umeabtk_thumb.jpg',
-        description: 'A webpage used to submit matches and calculate a ranking for me table tennis club',
+        description: 'A webpage used to submit matches and calculate a ranking for my table tennis club',
         tags: ['SQL','MVC','Unit Testing','Azure']
         },
         {

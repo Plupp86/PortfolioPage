@@ -1,4 +1,16 @@
 body {
     background-image: url('/assets/img/bg_main.jpg');
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:top;
+    background-attachment: fixed;
+    
+}
+
+@media only screen and (max-width: 560px) { 
+    body {
+        background-image: url('/assets/img/bg_mob.jpg');
+        background-repeat: no-repeat;
+        background-position:top;
+        background-attachment: fixed;
+    }
 }

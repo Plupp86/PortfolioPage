@@ -19,10 +19,10 @@
  <div class="cr-portfolio-list">
         <div class="cr-portfolio-item" *ngFor='let item of portfolio'>
             <h3>{{item.name}}</h3>
-            <img [src]='item.thumb' width="420px">
+            <img class="cr-thumb" [src]='item.thumb' width="420px">
             <div><p>{{item.description}}</p></div>
-            <div><a href="{{item.url}}">Visit Webpage</a></div>
-            <div><a href="{{item.git}}">Look at source code</a></div>
+            <div><i class="fas fa-link" style="margin-right:3px;"></i><a href="{{item.url}}">Visit Webpage</a></div>
+            <div><i class="fab fa-github" style="margin-right:3px;"></i> <a href="{{item.git}}">Look at source code</a></div>
             <div class="cr-skill-tag" *ngFor='let skill of item.tags'>
                 {{skill}}
             </div>
