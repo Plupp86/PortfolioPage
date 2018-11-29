@@ -13,7 +13,7 @@
         <a class="cr-nav-link" routerLink="/welcome" (click)="drawCanvas('welcome')">Home</a>
       </span>
       <span class="cr-header-link">
-          <a class="cr-nav-link" routerLink="/about" (click)="drawCanvas('about')">About Me </a>
+          <a class="cr-nav-link" routerLink="/contact" (click)="drawCanvas('contact')">Contact Me </a>
       </span>
       <span class="cr-header-link">
         <a class="cr-nav-link" routerLink="/portfolio" (click)="drawCanvas('portfolio')">Portfolio</a>
@@ -29,7 +29,7 @@
     <a routerLink="/about" routerLinkActive="active">About</a>
   </nav> -->
 
-  <div class="cr-main">
+<div class="cr-main">
   <main [@routerTransition]="getState(o)">
     <router-outlet #o="outlet"></router-outlet>
   </main>

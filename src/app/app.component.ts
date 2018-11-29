@@ -74,7 +74,7 @@ export class AppComponent implements OnInit {
         underscore.style.transform = "translate(67%, 0%)";
         break;
 
-        case 'about':
+        case 'contact':
         underscore.style.transform = "translate(33%, 0%)";
     }     
   }

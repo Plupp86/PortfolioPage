@@ -16,7 +16,7 @@ export const routerTransition = trigger('routerTransition', [
         ])
       ]),
 
-      transition('portfolio => about', [
+      transition('portfolio => contact', [
         query(':enter, :leave', style({ position: 'fixed', width:'100%' })
           , { optional: true }),
         group([
@@ -47,7 +47,7 @@ export const routerTransition = trigger('routerTransition', [
     ])
   ]),
 
-  transition('home => about', [
+  transition('home => contact', [
     group([
       query(':enter, :leave', style({ position: 'fixed', width:'100%' })
       , { optional: true }),

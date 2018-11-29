@@ -13,6 +13,7 @@ import { Routes } from "@angular/router";
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CvService } from './home/cv.service';
+import { ContactComponent } from './home/contact.component';
 
 
 
@@ -41,7 +42,7 @@ import { CvService } from './home/cv.service';
   declarations: [
     AppComponent,
     WelcomeComponent,
-    AboutComponent
+    ContactComponent
   ],
   imports:[
  CommonModule,
